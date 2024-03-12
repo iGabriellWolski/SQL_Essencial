@@ -170,3 +170,123 @@ column_name LONGTEXT;
 
 conteudo LONGTEXT; -- Pode armazenar até 4,294,967,295 caracteres.
 ```
+## Tipos de Dados Numéricos e Booleanos em MySQL
+
+### INT
+O tipo de dado `INT` é usado para armazenar números inteiros.
+
+#### Sintaxe:
+```sql
+column_name INT;
+
+idade INT; -- Pode armazenar valores entre -2147483648 e 2147483647.
+```
+
+DECIMAL
+O tipo de dado DECIMAL é usado para armazenar números decimais exatos.
+
+Sintaxe:
+```sql
+column_name DECIMAL(precision, scale);
+
+preco DECIMAL(8, 2); -- 8 dígitos, sendo 2 após o ponto decimal.
+```
+
+FLOAT
+O tipo de dado FLOAT é usado para armazenar números de ponto flutuante.
+
+Sintaxe:
+```sql
+column_name FLOAT;
+
+altura FLOAT;
+```
+DOUBLE
+O tipo de dado DOUBLE é usado para armazenar números de ponto flutuante de precisão dupla.
+
+Sintaxe:
+```sql
+column_name DOUBLE;
+
+peso DOUBLE;
+```
+BOOLEAN
+O tipo de dado BOOLEAN é usado para armazenar valores booleanos, que podem ser TRUE ou FALSE.
+
+Sintaxe:
+```sql
+column_name BOOLEAN;
+
+ativo BOOLEAN;
+```
+TINYINT
+O tipo de dado TINYINT é usado para armazenar números inteiros pequenos. Pode armazenar valores entre -128 e 127.
+
+Sintaxe:
+```sql
+column_name TINYINT;
+
+status TINYINT; -- Pode armazenar valores entre -128 e 127.
+```
+SMALLINT
+O tipo de dado SMALLINT é usado para armazenar números inteiros pequenos. Pode armazenar valores entre -32768 e 32767.
+
+Sintaxe:
+```sql
+column_name SMALLINT;
+
+quantidade SMALLINT; -- Pode armazenar valores entre -32768 e 32767.
+```
+## Tipos de Dados de Data em MySQL
+
+### DATE
+O tipo de dado `DATE` é usado para armazenar datas no formato 'YYYY-MM-DD'.
+
+#### Sintaxe:
+```sql
+column_name DATE;
+
+data_nascimento DATE;
+```
+
+TIME
+O tipo de dado TIME é usado para armazenar horários no formato 'HH:MM:SS'.
+
+Sintaxe:
+```sql
+column_name TIME;
+
+hora_cadastro TIME;
+```
+
+DATETIME
+O tipo de dado DATETIME é usado para armazenar datas e horários no formato 'YYYY-MM-DD HH:MM:SS'.
+
+Sintaxe:
+```sql
+column_name DATETIME;
+
+data_hora_registro DATETIME;
+```
+
+TIMESTAMP
+O tipo de dado TIMESTAMP é usado para armazenar marcas de tempo, geralmente usadas para registrar a última atualização de uma linha.
+
+Sintaxe:
+```sql
+column_name TIMESTAMP;
+
+ultima_atualizacao TIMESTAMP;
+```
+
+YEAR
+O tipo de dado YEAR é usado para armazenar anos no formato 'YYYY'.
+
+Sintaxe:
+```sql
+column_name YEAR;
+
+ano_fabricacao YEAR;
+```
+
+
