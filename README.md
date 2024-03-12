@@ -288,5 +288,50 @@ column_name YEAR;
 
 ano_fabricacao YEAR;
 ```
+## Comandos de Inserção de Dados em Tabelas MySQL
+
+### INSERT INTO
+O comando `INSERT INTO` é usado para inserir novas linhas em uma tabela existente.
+
+#### Sintaxe:
+```sql
+INSERT INTO nome_da_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...);
+
+INSERT INTO clientes (nome, idade, email) VALUES ('João', 30, 'joao@example.com');
+```
+
+INSERT IGNORE INTO
+O comando INSERT IGNORE INTO é semelhante ao INSERT INTO, mas ignora as linhas que causariam erros de chave duplicada.
+
+Sintaxe:
+```sql
+INSERT IGNORE INTO nome_da_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...);
+
+INSERT IGNORE INTO produtos (nome, preco) VALUES ('Camiseta', 20.99);
+```
+INSERT INTO ... SELECT
+O comando INSERT INTO ... SELECT é usado para inserir dados de uma consulta em uma tabela.
+
+Sintaxe:
+```sql
+INSERT INTO nome_da_tabela (coluna1, coluna2, ...)
+SELECT valor1, valor2, ...
+FROM outra_tabela
+WHERE condição;
+
+INSERT INTO pedidos (produto_id, quantidade)
+SELECT id, 2
+FROM produtos
+WHERE categoria = 'Eletrônicos';
+```
+REPLACE INTO
+O comando REPLACE INTO insere uma nova linha na tabela ou substitui uma linha existente se houver uma chave única ou primária duplicada.
+
+Sintaxe:
+```sql
+REPLACE INTO nome_da_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...);
+
+REPLACE INTO usuarios (id, nome, email) VALUES (1, 'Maria', 'maria@example.com');
+```
 
 
