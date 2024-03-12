@@ -11,6 +11,7 @@ No MySQL, você pode usar os seguintes comandos para criar tabelas em um banco d
        nome VARCHAR(50),
        idade INT
    );
+   ```
 
  1: PRIMARY KEY: Este comando é usado para definir uma coluna como chave primária, que deve ser única para cada linha na tabela e pode ser usada para identificar exclusivamente cada linha.
 
@@ -21,7 +22,7 @@ CREATE TABLE produtos (
     nome VARCHAR(100),
     preco DECIMAL(10,2)
 );
-```sql
+```
 
 2: AUTO_INCREMENT: Este comando é usado em conjunto com uma coluna INT para criar uma sequência automática de valores numéricos para essa coluna. É comumente usado com chaves primárias para criar identificadores únicos para cada linha.
 
@@ -32,5 +33,6 @@ CREATE TABLE alunos (
     nome VARCHAR(50),
     idade INT
 );
+```
 
 
