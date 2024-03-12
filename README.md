@@ -6,38 +6,20 @@ SQL (Structured Query Language) é uma linguagem de programação utilizada para
 
 Com SQL, você pode realizar diversas operações, incluindo a criação de bancos de dados e tabelas, inserção, atualização e exclusão de dados, consulta de informações específicas, entre outras.
 
-## Comandos Básicos
+# Tipos de Dados de Texto do MySQL
 
-### DDL (Data Definition Language - Linguagem de Definição de Dados)
-- `CREATE DATABASE`: Cria um novo banco de dados.
-- `CREATE TABLE`: Cria uma nova tabela no banco de dados.
-- `ALTER TABLE`: Modifica a estrutura de uma tabela existente (adicionar, modificar ou excluir colunas).
-- `DROP TABLE`: Exclui uma tabela do banco de dados.
-- `TRUNCATE TABLE`: Remove todos os registros de uma tabela sem log.
+No MySQL, existem vários tipos de dados de texto que podem ser usados para armazenar strings de caracteres de comprimento variável. Abaixo está uma lista de todos os tipos de dados de texto do MySQL:
 
-### DML (Data Manipulation Language - Linguagem de Manipulação de Dados)
-- `SELECT`: Recupera dados de uma ou mais tabelas.
-- `INSERT INTO`: Insere novas linhas em uma tabela.
-- `UPDATE`: Modifica dados existentes em uma tabela.
-- `DELETE FROM`: Exclui registros de uma tabela.
+1. **CHAR**: Armazena uma cadeia de caracteres de comprimento fixo.
 
-### DCL (Data Control Language - Linguagem de Controle de Dados)
-- `GRANT`: Concede privilégios específicos para usuários em um banco de dados.
-- `REVOKE`: Revoga privilégios previamente concedidos a usuários.
+2. **VARCHAR**: Armazena uma cadeia de caracteres de comprimento variável.
 
-## Comandos Intermediários
+3. **TINYTEXT**: Armazena uma sequência de caracteres de comprimento máximo de 255 bytes.
 
-### TCL (Transaction Control Language - Linguagem de Controle de Transações)
-- `COMMIT`: Confirma as transações pendentes.
-- `ROLLBACK`: Desfaz as transações pendentes.
-- `SAVEPOINT`: Define um ponto no qual você pode rolar de volta a transação.
-- `SET TRANSACTION`: Configura propriedades de transação como isolamento e acesso somente leitura.
+4. **TEXT**: Armazena uma sequência de caracteres de comprimento máximo de 65,535 bytes.
 
-### DQL (Data Query Language - Linguagem de Consulta de Dados)
-- `SELECT`: Consulta dados de uma ou mais tabelas.
+5. **MEDIUMTEXT**: Armazena uma sequência de caracteres de comprimento máximo de 16,777,215 bytes.
 
-### DDL e DML
-- `COMMENT`: Adiciona comentários a objetos de banco de dados.
+6. **LONGTEXT**: Armazena uma sequência de caracteres de comprimento máximo de 4,294,967,295 bytes.
 
-## Conclusão
-Esta documentação fornece uma visão geral dos comandos SQL comuns no MySQL, organizados por níveis de complexidade. Para informações mais detalhadas e avançadas, consulte a documentação oficial do MySQL.
+Esses tipos de dados de texto permitem armazenar diferentes quantidades de texto, desde pequenas descrições até grandes blocos de texto, como documentos ou conteúdo de páginas da web. A escolha do tipo de dado depende do tamanho máximo esperado do texto que será armazenado.
