@@ -1,4 +1,4 @@
-# Comandos para Criação de Tabelas no MySQL
+## Comandos para Criação de Tabelas no MySQL
 
 No MySQL, você pode usar os seguintes comandos para criar tabelas em um banco de dados:
 
@@ -75,3 +75,15 @@ CREATE TABLE pedidos (
     FOREIGN KEY (id_cliente) REFERENCES clientes(id)
 );
 ```
+## Comandos para Deletar Tabelas em MySQL
+
+### DROP TABLE
+O comando __DROP TABLE__ é usado para remover uma tabela do banco de dados.
+
+#### Sintaxe:
+```sql
+DROP TABLE nome_da_tabela;
+```
+
+
+
