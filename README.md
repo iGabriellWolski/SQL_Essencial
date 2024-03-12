@@ -50,3 +50,19 @@ No MySQL, existem vários tipos de dados numéricos que podem ser usados para ar
 
 Esses são os tipos de dados numéricos mais comuns no MySQL, e cada um deles tem suas próprias características e limites. A escolha do tipo de dado depende da faixa de valores e da precisão necessárias para armazenar os dados.
 
+# Tipos de Dados de Datas em SQL
+
+No SQL, incluindo o MySQL, existem vários tipos de dados para lidar com datas e horas. Abaixo está uma lista dos tipos de dados de datas comuns:
+
+1. **DATE**: Armazena uma data no formato 'YYYY-MM-DD'. Esse tipo de dado inclui apenas a data, sem informações de hora.
+
+2. **TIME**: Armazena um horário no formato 'HH:MM:SS'. Esse tipo de dado inclui apenas a hora, sem informações de data.
+
+3. **DATETIME**: Armazena uma data e hora no formato 'YYYY-MM-DD HH:MM:SS'. Esse tipo de dado inclui tanto a data quanto a hora.
+
+4. **TIMESTAMP**: Similar ao DATETIME, armazena uma data e hora no formato 'YYYY-MM-DD HH:MM:SS'. No entanto, o TIMESTAMP tem uma faixa de valores limitada e é automaticamente atualizado pelo sistema para refletir a data e hora atual do sistema quando uma linha é inserida ou atualizada.
+
+5. **YEAR**: Armazena um ano no formato de quatro dígitos 'YYYY'. Esse tipo de dado é usado principalmente para armazenar anos.
+
+Esses são os tipos de dados de datas comuns em SQL, cada um com suas próprias características e uso adequado dependendo dos requisitos do banco de dados e da aplicação.
+
