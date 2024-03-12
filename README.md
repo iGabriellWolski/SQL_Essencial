@@ -66,3 +66,25 @@ No SQL, incluindo o MySQL, existem vários tipos de dados para lidar com datas e
 
 Esses são os tipos de dados de datas comuns em SQL, cada um com suas próprias características e uso adequado dependendo dos requisitos do banco de dados e da aplicação.
 
+# Comandos para Alteração de Tabelas no MySQL
+
+No MySQL, você pode usar os seguintes comandos para alterar tabelas:
+
+1. **ALTER TABLE**: Este é o comando principal usado para fazer alterações em uma tabela existente. Alguns exemplos de alterações que você pode fazer com o comando ALTER TABLE incluem adicionar, modificar ou excluir colunas, definir ou modificar restrições de chave primária e estrangeira, renomear a tabela e alterar o tipo de armazenamento da tabela.
+
+2. **ADD COLUMN**: Este comando é usado dentro do comando ALTER TABLE para adicionar uma nova coluna à tabela existente.
+
+3. **MODIFY COLUMN**: Este comando é usado dentro do comando ALTER TABLE para modificar uma coluna existente na tabela. Você pode modificar o tipo de dados da coluna, o tamanho, se a coluna pode aceitar valores nulos, e assim por diante.
+
+4. **DROP COLUMN**: Este comando é usado dentro do comando ALTER TABLE para remover uma coluna existente da tabela.
+
+5. **RENAME COLUMN**: Embora não haja um comando específico para renomear uma coluna diretamente, você pode simular a renomeação através de uma combinação de comandos. Você pode usar o comando ALTER TABLE para adicionar uma nova coluna com o novo nome, copiar os dados da coluna antiga para a nova coluna, remover a coluna antiga e, opcionalmente, renomear a nova coluna com o nome desejado usando o comando ALTER TABLE ... CHANGE COLUMN.
+
+6. **ADD INDEX**: Este comando é usado dentro do comando ALTER TABLE para adicionar um novo índice à tabela existente.
+
+7. **DROP INDEX**: Este comando é usado dentro do comando ALTER TABLE para remover um índice existente da tabela.
+
+8. **RENAME TABLE**: Este comando é usado para renomear uma tabela existente.
+
+Estes são os principais comandos que você pode usar para alterar a estrutura de tabelas em um banco de dados MySQL. Cada comando pode ser usado de várias maneiras para realizar diferentes tipos de alterações na tabela.
+
