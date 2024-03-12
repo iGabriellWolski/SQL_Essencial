@@ -334,4 +334,64 @@ REPLACE INTO nome_da_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...)
 REPLACE INTO usuarios (id, nome, email) VALUES (1, 'Maria', 'maria@example.com');
 ```
 
+## Comandos de Alteração em Tabelas em MySQL
+
+### ADD COLUMN
+O comando `ADD COLUMN` é usado para adicionar uma nova coluna a uma tabela existente.
+
+#### Sintaxe:
+```sql
+ALTER TABLE nome_da_tabela ADD COLUMN nome_da_coluna tipo_de_dado;
+
+ALTER TABLE clientes ADD COLUMN telefone VARCHAR(20);
+```
+MODIFY COLUMN
+O comando MODIFY COLUMN é usado para modificar o tipo de dados de uma coluna existente em uma tabela.
+
+Sintaxe:
+```sql
+ALTER TABLE nome_da_tabela MODIFY COLUMN nome_da_coluna novo_tipo_de_dado;
+
+ALTER TABLE produtos MODIFY COLUMN preco DECIMAL(10,2);
+```
+
+DROP COLUMN
+O comando DROP COLUMN é usado para remover uma coluna de uma tabela existente.
+
+Sintaxe:
+```sql
+ALTER TABLE nome_da_tabela DROP COLUMN nome_da_coluna;
+
+ALTER TABLE clientes DROP COLUMN telefone;
+```
+RENAME COLUMN
+O comando RENAME COLUMN é usado para renomear uma coluna em uma tabela existente.
+
+Sintaxe:
+```sql
+ALTER TABLE nome_da_tabela RENAME COLUMN nome_antigo TO nome_novo;
+
+ALTER TABLE produtos RENAME COLUMN descricao TO descricao_produto;
+```
+
+ALTER COLUMN
+O comando ALTER COLUMN é usado para modificar as propriedades de uma coluna, como torná-la NOT NULL ou adicionar uma restrição.
+
+Sintaxe:
+```sql
+ALTER TABLE nome_da_tabela ALTER COLUMN nome_da_coluna modificador;
+
+ALTER TABLE pedidos ALTER COLUMN quantidade SET DEFAULT 1;
+```
+
+ADD CONSTRAINT
+O comando ADD CONSTRAINT é usado para adicionar uma restrição a uma tabela, como uma chave estrangeira.
+
+Sintaxe:
+```sql
+ALTER TABLE nome_da_tabela ADD CONSTRAINT nome_da_restricao FOREIGN KEY (coluna) REFERENCES outra_tabela(coluna);
+
+ALTER TABLE pedidos ADD CONSTRAINT fk_cliente FOREIGN KEY (cliente_id) REFERENCES clientes(id);
+```
+
 
