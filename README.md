@@ -56,7 +56,7 @@ CREATE TABLE funcionarios (
 ```
 * __UNIQUE__: Este comando é usado para garantir que os valores em uma coluna sejam exclusivos, ou seja, nenhum valor duplicado é permitido.
 
-Exemplo:
+> Exemplo:
 ```sql
 CREATE TABLE emails (
     id INT PRIMARY KEY,
