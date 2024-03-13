@@ -127,8 +127,6 @@ DROP TABLE nome_da_tabela RESTRICT;
 
 ## Tipos de Dados de Texto em MySQL
 
-### CHAR
-
 O tipo de dado `CHAR` é usado para armazenar uma string de tamanho fixo. Ele pode armazenar até `length` caracteres.
 
 * **Sintaxe**
