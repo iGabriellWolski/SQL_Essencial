@@ -1,7 +1,5 @@
 ## Comandos para Criação de Tabelas no MySQL
 
-### No MySQL você pode usar os seguintes comandos para criar tabelas em um banco de dados:
-
 >`CREATE TABLE` Este é o comando principal usado para criar uma nova tabela no banco de dados. Você define o nome da tabela e lista as colunas e seus tipos de dados.
 
 * **Sintaxe**
